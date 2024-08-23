@@ -5,10 +5,15 @@ description = "Default template for PDM package"
 authors = [
     {name = "Janusz Dziurzyński", email = "janusz@forserial.org"},
 ]
-dependencies = []
+dependencies = [
+    "litgen @ git+https://github.com/pthom/litgen",
+]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
+
+[tool.pdm.scripts]
+generate = 'python3 autogenerate_bindings.py'
 
 [build-system]
 requires = ["pdm-backend"]
@@ -17,3 +22,10 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pre-commit>=3.8.0",
+    "pytest>=8.3.2",
+    "ruff>=0.6.2",
+]

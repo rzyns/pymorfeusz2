@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "name": "Debuger języka Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "autogenerate_bindings.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}

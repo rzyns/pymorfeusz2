@@ -1,0 +1,4 @@
+{
+    "cmake.configureOnOpen": false,
+    "cmake.cmakePath": "/home/vscode/.local/share/mise/installs/cmake/latest/bin/cmake"
+}

@@ -1,2 +1,6 @@
 [tools]
 pdm = "latest"
+cmake = "latest"
+
+[env]
+_.python.venv = ".venv"
