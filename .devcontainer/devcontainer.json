@@ -8,5 +8,17 @@
 		"args": {}
 	},
 
-	"postCreateCommand": "./.devcontainer/post-create.sh"
+	"postCreateCommand": "mise install -y",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools-themes",
+				"tamasfe.even-better-toml",
+				"ms-python.python",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
 }
