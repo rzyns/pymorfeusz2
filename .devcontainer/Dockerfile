@@ -15,6 +15,6 @@ RUN    apt update \
 
 
 RUN    mise activate -y -q bash > /etc/profile.d/02-mise.sh \
-    && echo 'eval "$(mise hook-env -y -q --shell zsh)"' >> /etc/zsh/zshenv \
-    && echo 'eval "$(mise activate -y -q zsh)"' >> /etc/zsh/zshrc \
+    && echo 'eval "$(mise activate -y -q zsh)"' >> /etc/zsh/zshenv \
+    && echo 'DSHELL=/usr/bin/zsh' >> /etc/adduser.conf \
     && chsh -s /usr/bin/zsh vscode

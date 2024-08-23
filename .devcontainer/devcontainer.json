@@ -8,5 +8,5 @@
 		"args": {}
 	},
 
-	"postCreateCommand": "./.devcontainer/post-create.sh"
+	"postCreateCommand": "mise install -y"
 }
